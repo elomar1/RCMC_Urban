@@ -1,0 +1,11 @@
+<svg id="play" xmlns="http://www.w3.org/2000/svg" width="106" height="106" viewBox="0 0 106 106">
+  <g id="Ellipse_9944" data-name="Ellipse 9944" fill="none" stroke="#fff" stroke-width="1">
+    <circle cx="53" cy="53" r="53" stroke="none"/>
+    <circle cx="53" cy="53" r="52.5" fill="none"/>
+  </g>
+  <g id="Ellipse_9929" data-name="Ellipse 9929" fill="none" stroke="#fff" stroke-width="1.5">
+    <circle cx="53" cy="53" r="53" stroke="none"/>
+    <circle cx="53" cy="53" r="52.25" fill="none"/>
+  </g>
+  <path id="Path_130092" data-name="Path 130092" d="M2938.259,513.992l20.887-12.914a3.713,3.713,0,0,0,1.478-2.956,3.4,3.4,0,0,0-1.478-2.553L2929.452,477.7a3.7,3.7,0,0,0-3.225,0c-1.9.8-1.613,3.493-1.613,3.493v34.8s-.367,2.477,1.613,3.359,5.085-1.158,5.085-1.158" transform="translate(-2884.988 -445.584)" fill="#fff" opacity="0.7"/>
+</svg>
