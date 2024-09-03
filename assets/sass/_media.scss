@@ -1,5 +1,8 @@
 @media (min-width: 992px) {
-
+  .offset-custom {
+    margin-right: 16%;
+    margin-left: 0;
+  }
 }
 
 
@@ -49,7 +52,7 @@
 
 
 @media (max-width: 991px) {
- 
+
   .homeHeader,
   .footer {
     overflow: hidden;

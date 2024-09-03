@@ -10,171 +10,828 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css" />
-    <!--  swiper CSS -->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
     <!-- custom style -->
     <link rel="stylesheet" href="../assets/css/styleRTL.css" />
 
     <title> </title>
   </head>
   <body>
-
-
-
-      <!-- start header -->
-      <div class="navigation-conatiner">
-        <div class="top_nav">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-6 col-md-6 left-sidebar">
-                        <div class="nav_social_list">
-                            <ul class="social-icons">
-                                
-
-      <ul class="social-icons">
-      <li><a href="https://www.instagram.com/rcmc_ksa/" target="_blank" title="Instagram"> 
-        <img src="../assets/images/shared/insta-w.svg" alt="">
-      </a></li>
-      <li><a href="https://twitter.com/RCMC_KSA?lang=ar" target="_blank" title="Twitter"> 
-        <img src="../assets/images/shared/x-w.svg" alt="">
-      </a></li>
-      <li><a href="https://www.linkedin.com/company/rcmcksa" target="_blank" title="Linkedin"> 
-        <img src="../assets/images/shared/in-w.svg" alt="">
-      </a></li>
-      <li><a href="https://www.youtube.com/channel/UCPT5SxfVGRL0yzqNa6d2i8A" target="_blank" title="Youtube"> 
-        <img src="../assets/images/shared/youtube-w.svg" alt="">
-      </a></li>
-      </ul>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-6 right-sidebar">
-                        <div class="nav_search_bar">
-                          <div class="lang">
-                            <a href="#">
-                              English
-                            </a>
-                          </div>
-                            <div class="nav_contact">
-                              <h5>
-                                ‏الرقم الموحد
-                              </h5>
-                                <a href="#" >
-                                  800 10000 41
-                                </a>
-                            </div>
-                            <div class="nav_search_icon" style="cursor: pointer;">
-                                <span class="search_icon">
-                                    <a onclick="myFunction()" class="" title="بحث">
-                                      <img src="../assets/images/shared/search-w.svg" alt="">
-                                    </a>
-                                </span>
-                                <div id="searchBox" class="srch_box" style="display: none;">
-                                    <form action="/search">
-                                        <div class="srch_sec1"><input name="keywords" class="typeahead" type="text" placeholder="أدخل الكلمة " required=""></div>
-                                        <div class="srch_sec3"><input class="search_button" type="submit" value="بحث"></div>
-                                        <input type="submit" value="Search" class="submit-btn hideThis">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="main-navigation" class="bg-light container-fluid">
-            <nav class="navbar navbar-expand-lg bg-ligh navbar-light">
-                <a class="navbar-brand m-0" href="/">
-                  <img class="main_logo" title="Royal Commision For Makkah City and Holy Site" alt="Royal Commision For Makkah City and Holy Site" src="../assets/images/home/Brandmark.svg">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    
-
-      <ul class="nav-menu navbar-nav reverse-nav w-100">
-        <li class="nav-item">
-            <a class="nav-link" href="/">الرئيسية</a>
-        </li>
-      <li class="nav-item">
-            <div class="dropdown">
-                <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton@documentID" data-bs-toggle="dropdown" aria-expanded="false">
-                  اكتشف مكة
-                </a>
-                <ul class="dropdown-menu nav_dropdown text-end" aria-labelledby="dropdownMenuButton@documentID">
-                        <li><a class="dropdown-item" href="/about-rcmc/about-us">نبذة عامة</a></li>
-                        <li><a class="dropdown-item" href="/about-rcmc/board-members"> أعضاء مجلس الإدارة</a></li>
-                        <li><a class="dropdown-item" href="/about-rcmc/ceo-message">كلمة الرئيس التنفيذي</a></li>
-                        <li><a class="dropdown-item" href="/strategic">الاستراتيجية</a></li>
-                        <li><a class="dropdown-item" href="/about-rcmc/geographic-scope">النطاق الجغرافي</a></li>
-                        <li><a class="dropdown-item" href="/e-services/tenders-and-contracts">المنافسات والعقود</a></li>
-
+    <!-- start header -->
+    <div class="navigation-conatiner">
+      <div class="top_nav">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-md-6 left-sidebar">
+              <div class="nav_social_list">
+                <ul class="social-icons">
+                  <ul class="social-icons">
+                    <li>
+                      <a
+                        href="https://www.instagram.com/rcmc_ksa/"
+                        target="_blank"
+                        title="Instagram"
+                      >
+                        <img src="../assets/images/shared/insta-w.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/RCMC_KSA?lang=ar"
+                        target="_blank"
+                        title="Twitter"
+                      >
+                        <img src="../assets/images/shared/x-w.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/rcmcksa"
+                        target="_blank"
+                        title="Linkedin"
+                      >
+                        <img src="../assets/images/shared/in-w.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/channel/UCPT5SxfVGRL0yzqNa6d2i8A"
+                        target="_blank"
+                        title="Youtube"
+                      >
+                        <img
+                          src="../assets/images/shared/youtube-w.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                  </ul>
                 </ul>
+              </div>
             </div>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-              الانشطة والفعاليات
-            </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            التجارب السياحية  
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            معالم مكة
-          </a>
-        </li>
-      </ul>
+            <div class="col-6 col-md-6 right-sidebar">
+              <div class="nav_search_bar">
+                <div class="lang">
+                  <a href="#"> English </a>
                 </div>
-            </nav>
-        </div>
-      </div>
-      <!-- end header -->
-
-
-    <!-- Page Title -->
-    <div class="pageTitle">
-      <div class="container large-container">
-        <div class="row">
-          <h2>
-            من نحن
-          </h2>
-        </div>
-      </div>
-    </div>
-    <!-- End Page Title -->
-
-     <!-- Breadcrumb -->
-     <div class="breadcrumb">
-      <div class="container large-container">
-        <div class="row">
-          <div class="col-12">          
-            <ul class="items">
-              <li>
-                <a href="#!" class="home">
-                  الرئيسية
-                </a>
-              </li>
-              <!-- <li>
-                  <a href="#!">
-                    من نحن    
-                  </a>
-              </li> -->
-              <li>
-                  <span>
-                    من نحن    
+                <div class="nav_contact">
+                  <h5>‏الرقم الموحد</h5>
+                  <a href="#"> 800 10000 41 </a>
+                </div>
+                <div class="nav_search_icon" style="cursor: pointer">
+                  <span class="search_icon">
+                    <a onclick="myFunction()" class="" title="بحث">
+                      <img src="../assets/images/shared/search-w.svg" alt="" />
+                    </a>
                   </span>
+                  <div id="searchBox" class="srch_box" style="display: none">
+                    <form action="/search">
+                      <div class="srch_sec1">
+                        <input
+                          name="keywords"
+                          class="typeahead"
+                          type="text"
+                          placeholder="أدخل الكلمة "
+                          required=""
+                        />
+                      </div>
+                      <div class="srch_sec3">
+                        <input
+                          class="search_button"
+                          type="submit"
+                          value="بحث"
+                        />
+                      </div>
+                      <input
+                        type="submit"
+                        value="Search"
+                        class="submit-btn hideThis"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main-navigation" class="bg-light container-fluid">
+        <nav class="navbar navbar-expand-lg bg-ligh navbar-light">
+          <a class="navbar-brand m-0" href="/">
+            <img
+              class="main_logo"
+              title="Royal Commision For Makkah City and Holy Site"
+              alt="Royal Commision For Makkah City and Holy Site"
+              src="../assets/images/home/Brandmark.svg"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav-menu navbar-nav reverse-nav w-100">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">استوديو التصميم العمراني</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">عن الهوية المعمارية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">تقديم طلب</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">الأدلة والنماذج</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">الأسئلة الشائعة</a>
               </li>
             </ul>
           </div>
-        </div>        
+        </nav>
       </div>
     </div>
-    <!-- End Breadcrumb -->
 
+    <!-- end header -->
+
+    <section class="servicesReq">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading">
+              <h1 class="font36"></h1>
+              <p class="p20"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="panel">
+          <div class="panel-body wizard-content">
+            <form
+              id="example-form"
+              action="#"
+              class="tab-wizard wizard-circle wizard clearfix"
+            >
+              <h6>
+                <span class="step-title"> بدء الطلب </span>
+              </h6>
+              <section>
+                <br />
+                <div class="row">
+                  <div class="col-lg-6 form-cont">
+                    <label for="taskType" class="form-label">
+                      اسم دائرة التنفيذ
+                    </label>
+                    <select class="form-control" name="" id="">
+                      <option value="0">يرجى تحديد اختيار</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                    <label for="taskType" class="error"
+                      >This field is required.</label
+                    >
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="taskType" class="form-label">
+                      درجة الأهمية
+                    </label>
+                    <div class="radio-inline-container">
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option3"
+                          id="inlineRadio1"
+                          name="inlineRadioOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="inlineRadio1">
+                          عالي
+                        </label>
+                      </div>
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option2"
+                          id="inlineRadio2"
+                          name="inlineRadioOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="inlineRadio2">
+                          متوسط
+                        </label>
+                      </div>
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option3"
+                          id="inlineRadio3"
+                          name="inlineRadioOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="inlineRadio3">
+                          منخفض
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- step 2 -->
+              <h6>المنفذ ضده</h6>
+              <section>
+                <div class="row">
+                  <div class="col-lg-6 form-cont">
+                    <label for="taskType" class="form-label">
+                      نوع المنفذ ضده
+                    </label>
+                    <select class="form-control" name="" id="">
+                      <option value="0">يرجى تحديد اختيار</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-6 form-cont">
+                    <label for="taskName" class="form-label">
+                      رقم السجل التجاري
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="حقل إدخال النص"
+                      class="form-control"
+                      id="taskName"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="taskStartTime" class="form-label">
+                      تاريخ بداية السجل التجاري
+                    </label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="taskStartTime"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="taskEndTime" class="form-label">
+                      تاريخ نهاية السجل التجاري
+                      <span> (يتم تحديد أسبوعين مع إمكانية تغيير الفترة) </span>
+                    </label>
+                    <input type="date" class="form-control" id="taskEndTime" />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="id" class="form-label">
+                      الرقم الوطني الموحد
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="الرقم الوطني الموحد"
+                      class="form-control"
+                      id="id"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="Name" class="form-label"> الاسم </label>
+                    <input
+                      type="text"
+                      placeholder="رجاء كتابة الاسم"
+                      class="form-control"
+                      id="Name"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="phoneNumb" class="form-label">
+                      رقم الهاتف
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="رقم الهاتف"
+                      class="form-control"
+                      id="phoneNumb"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="phoneNumb" class="form-label">
+                      checkbox text
+                    </label>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="1"
+                      />
+                      <span class="checkmark"></span>
+                      <label class="form-check-label" for="1"> 1 </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="2"
+                        checked
+                      />
+                      <span class="checkmark"></span>
+                      <label class="form-check-label" for="2"> 2 </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="3"
+                      />
+                      <span class="checkmark"></span>
+                      <label class="form-check-label" for="3"> 3 </label>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="radType" class="form-label">
+                      درجة الأهمية
+                    </label>
+                    <div class="radio-inline-container">
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option3"
+                          id="rad1"
+                          name="inlineRadioOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="rad1">
+                          عالي
+                        </label>
+                      </div>
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option2"
+                          id="rad2"
+                          name="inlineRadioOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="rad2">
+                          متوسط
+                        </label>
+                      </div>
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option3"
+                          id="rad3"
+                          name="inlineRadioOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="rad3">
+                          منخفض
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 form-cont">
+                    <label for="phoneNumb" class="form-label">
+                      بيانات مقر الشركة
+                    </label>
+
+                    <textarea
+                      class="form-control"
+                      name="details"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="رجاء كتابة البيانات"
+                    ></textarea>
+                  </div>
+                </div>
+              </section>
+
+              <!-- step 3 -->
+              <h6>بيانات السند التنفيذي</h6>
+              <section>
+                <div class="row">
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label"> رقم نوع السند </label>
+                    <select class="form-control" name="" id="">
+                      <option value="0">يرجى تحديد اختيار</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label"> رقم السند </label>
+                    <input
+                      type="number"
+                      placeholder="رقم السند  "
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="docDate" class="form-label">
+                      تاريخ السند
+                    </label>
+                    <input type="date" class="form-control" id="docDate" />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label"> مكان إصدار السند </label>
+                    <input
+                      type="text"
+                      placeholder="مكان إصدار السند"
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label"> جهة إصدار السند </label>
+                    <input
+                      type="text"
+                      placeholder="جهة إصدار السند"
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="haveMoney" class="form-label">
+                      هل يتضمن السند مبالغ مالية
+                    </label>
+                    <div class="radio-inline-container">
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option3"
+                          id="rad1"
+                          name="haveMoneyOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="rad1"> نعم </label>
+                      </div>
+                      <div class="form-radio form-radio-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          value="option2"
+                          id="rad2"
+                          name="haveMoneyoOptions"
+                        />
+                        <span class="checkmark"></span>
+                        <label class="form-check-label" for="rad2"> لا </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="id" class="form-label">
+                      قيمة مبلغ السند رقمًا
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="قيمة مبلغ السند رقمًا"
+                      class="form-control"
+                      id="id"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="id" class="form-label">
+                      قيمة مبلغ السند كتابة
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="قيمة مبلغ السند كتابة"
+                      class="form-control"
+                      id="id"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="id" class="form-label">
+                      رقم الحساب المصرفي لطالب التنفيذ
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="رقم الحساب المصرفي لطالب التنفيذ"
+                      class="form-control"
+                      id="id"
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="id" class="form-label">
+                      بيان منطوق السند
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="بيان منطوق السند  "
+                      class="form-control"
+                      id="id"
+                    />
+                  </div>
+                </div>
+              </section>
+
+              <!-- step 4 -->
+              <h6>بيانات المطالبة بالأداء</h6>
+              <section>
+                <div class="row">
+                  <div class="col-lg-6 form-cont">
+                    <label for="date" class="form-label">
+                      تاريخ المطالبة بالأداء
+                    </label>
+                    <input type="date" class="form-control" id="date" />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label"> رقم النتيجة </label>
+                    <select class="form-control" name="" id="">
+                      <option value="0">يرجى تحديد اختيار</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label">
+                      رقم طلب المطالبة باألداء
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="رقم طلب المطالبة باألداء   "
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+
+                  <div class="col-lg-6 form-cont">
+                    <label for="" class="form-label">
+                      مرفق مستند طلب االداء
+                    </label>
+                    <input
+                      type="file"
+                      placeholder="رقم طلب المطالبة باألداء   "
+                      class="form-control"
+                      id=""
+                    />
+                  </div>
+                </div>
+              </section>
+
+              <!-- step 5 -->
+              <h6>مراجعة الطلب</h6>
+              <section>
+                <!-- start -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="sec-title">بدء الطلب</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">اسم دائرة التنفيذ</div>
+                      <div class="answer">اسم دائرة التنفيذ</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">درجة الأهمية</div>
+                      <div class="answer">عالي</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- start -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="sec-title">المنفذ ضده</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">نوع المنفذ ضده</div>
+                      <div class="answer">نوع المنفذ ضده</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 empty"></div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">رقم السجل التجاري</div>
+                      <div class="answer">رقم السجل التجاري</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">تاريخ بداية السجل التجاري</div>
+                      <div class="answer">تاريخ بداية السجل التجاري</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">تاريخ نهاية السجل التجاري</div>
+                      <div class="answer">تاريخ نهاية السجل التجاري</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">الرقم الوطني الموحد</div>
+                      <div class="answer">الرقم الوطني الموحد</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">الاسم</div>
+                      <div class="answer">الاسم</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">رقم الهاتف</div>
+                      <div class="answer">رقم الهاتف</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">بيانات مقر الشركة</div>
+                      <div class="answer">عنوان مقر الشركة ...</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+
+                <!-- start -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="sec-title">بيانات السند التنفيذي</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">رقم نوع السند</div>
+                      <div class="answer">رقم نوع السند</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">رقم السند</div>
+                      <div class="answer">رقم السند</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">تاريخ السند</div>
+                      <div class="answer">تاريخ السند</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">مكان إصدار السند</div>
+                      <div class="answer">مكان إصدار السند</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">جهة إصدار السند</div>
+                      <div class="answer">جهة إصدار السند</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">هل يتضمن السند مبالغ مالية</div>
+                      <div class="answer">نعم</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">قيمة مبلغ السند رقمًا</div>
+                      <div class="answer">قيمة مبلغ السند رقمًا</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">قيمة مبلغ السند كتابة</div>
+                      <div class="answer">قيمة مبلغ السند كتابة</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">
+                        رقم الحساب المصرفي لطالب التنفيذ
+                      </div>
+                      <div class="answer">رقم الحساب المصرفي لطالب التنفيذ</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">بيان منطوق السند</div>
+                      <div class="answer">بيان منطوق السند</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+
+                <!-- start -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="sec-title">بيانات المطالبة بالأداء</div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">تاريخ المطالبة بالأداء</div>
+                      <div class="answer">تاريخ المطالبة بالأداء</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">رقم النتيجة</div>
+                      <div class="answer">رقم النتيجة</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">رقم طلب المطالبة باألداء</div>
+                      <div class="answer">رقم طلب المطالبة باألداء</div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="details">
+                      <div class="question">مرفق مستند طلب االداء</div>
+                      <div class="answer">يُرجى رفع مستند طلب االداء</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </section>
+            </form>
+          </div>
+        </div>
+
+        <div class="notes grey-bg">
+          <h3>** ملاحظات هامة</h3>
+          <ul>
+            <li>
+              يتعين على مدير الحساب تسجيل ممثل الكيان الحكومي الذي يتمتع
+              بالصلاحيات القانونية مسبقًا على منصة تنفيذ
+            </li>
+            <li>طرق حماية البيانات تختلف حسب نوع البيانات</li>
+            <li>
+              لا يتم قبول طلب التنفيذ قبل مرور30يوم من تاريخ المطالبة بالأداء
+            </li>
+            <li>
+              في حال الطلبات العاجلة ال يتم قبول طلب التنفيذ قبل مرور ( خمسة)
+              أيام من تاريخ المطالب بالأداء
+            </li>
+            <li>
+              لا يجوز للممثل القانوني تقديم طلب تنفيذ إلى جهة حكومية أخرى يمثلها
+              أيضًا
+            </li>
+          </ul>
+          <p>
+            في حال الطلبات العاجلة ال يتم قبول طلب التنفيذ قبل مرور ( خمسة) أيام
+            من تاريخ المطالب بالأداء
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- start footer  -->
     <footer>
@@ -184,160 +841,145 @@
             <div class="footer-links">
               <ul>
                 <li>
-                  <a href="#">
-                    الرئيسية
-                  </a>
+                  <a href="#"> استوديو التصميم العمراني </a>
                 </li>
                 <li>
-                  <a href="#">
-                    اكتشف مكة
-                  </a>
+                  <a href="#"> عن الهوية المعمارية </a>
                 </li>
                 <li>
-                  <a href="#">
-                    الانشطة والفعاليات
-                  </a>
+                  <a href="#"> تقديم طلب </a>
                 </li>
                 <li>
-                  <a href="#">
-                    التجارب السياحية
-                  </a>
+                  <a href="#"> الأدلة والنماذج </a>
                 </li>
                 <li>
-                  <a href="#">
-                    معالم مكة
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="search-footer">
-                    <img src="../assets/images/shared/search-colord.svg" alt="">
-                  </a>
+                  <a href="#"> الأسئلة الشائعة </a>
                 </li>
               </ul>
             </div>
-  
+
             <div class="footer-social">
               <div class="phone">
-                <div class="title">
-                  ‏الرقم الموحد
-                </div>
+                <div class="title">‏الرقم الموحد</div>
                 <div class="number">
-                  <a href="#">
-                    800 10000 41
-                  </a>
+                  <a href="#"> 800 10000 41 </a>
                 </div>
               </div>
               <div class="social-links">
                 <ul>
                   <li>
                     <a href="#">
-                      <img src="../assets/images/shared/in.svg" alt="">
+                      <img src="../assets/images/shared/in.svg" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="../assets/images/shared/xt.svg" alt="">
+                      <img src="../assets/images/shared/xt.svg" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="../assets/images/shared/inst.svg" alt="">
+                      <img src="../assets/images/shared/inst.svg" alt="" />
                     </a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="#">
-                      <img src="../assets/images/shared/fb.svg" alt="">
+                      <img src="../assets/images/shared/fb.svg" alt="" />
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
-  
+            <div class="accessibility">
+              <ul>
+                <li>
+                  <a href="#!"
+                    ><img src="../assets/images/shared/Eye.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img src="../assets/images/shared/Mic.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img src="../assets/images/shared/Zoom-Out.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><img src="../assets/images/shared/Zoom-In.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
             <div class="footer-logos">
-              <div class="logo1">
-                <a href="#">
-                  <img src="../assets/images/shared/visit-saudi-logo.svg" alt="">
-                </a>
-              </div>
               <div class="logo2">
                 <a href="#">
-                  <img src="../assets/images/shared/logo-white.svg" alt="">
+                  <img src="../assets/images/shared/logo-white.svg" alt="" />
                 </a>
               </div>
             </div>
-  
-  
           </div>
 
           <div class="col-lg-6">
             <p class="copyRights">
-              جميع الحقوق محفوظة للهيئة الملكية لمدينة مكة المكرمة والمشاعر المقدسة 2024
+              جميع الحقوق محفوظة للهيئة الملكية لمدينة مكة المكرمة والمشاعر
+              المقدسة 2024
             </p>
-            <p class="update">
-              اخر تحديث بتاريخ: 31/07/2024
-            </p>
+            <p class="update">اخر تحديث بتاريخ: 31/07/2024</p>
           </div>
           <div class="col-lg-6">
             <div class="last-links">
               <ul>
                 <li>
-                  <a href="#">
-                    خريطة الموقع
-                  </a>
+                  <a href="#"> خريطة الموقع </a>
                 </li>
                 <li>
-                  <a href="#">
-                    سياسة الخصوصية
-                  </a>
+                  <a href="#"> سياسة الخصوصية </a>
                 </li>
                 <li>
-                  <a href="#">
-                   اتفاقية الاستخدام
-                  </a>
+                  <a href="#"> اتفاقية الاستخدام </a>
                 </li>
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
     <!-- end footer  -->
- 
+
     <!-- fixed contact -->
     <div class="contact-toggle">
       <div class="closed-btn">
-        <img src="../assets/images/shared/phone-call.svg" alt="">
+        <img src="../assets/images/shared/phone-call.svg" alt="" />
       </div>
       <div class="opened-contact">
         <div class="phone">
-          <h5>
-            ‏الرقم الموحد
-          </h5>
-          <p>
-            800 10000 41
-          </p>
+          <h5>‏الرقم الموحد</h5>
+          <p>800 10000 41</p>
         </div>
         <div class="social-list">
           <ul>
             <li>
               <a href="#">
-                <img src="../assets/images/shared/insta-w.svg" alt="">
+                <img src="../assets/images/shared/insta-w.svg" alt="" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/images/shared/x-w.svg" alt="">
+                <img src="../assets/images/shared/x-w.svg" alt="" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/images/shared/in-w.svg" alt="">
+                <img src="../assets/images/shared/in-w.svg" alt="" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="../assets/images/shared/youtube-w.svg" alt="">
+                <img src="../assets/images/shared/youtube-w.svg" alt="" />
               </a>
             </li>
           </ul>
@@ -345,12 +987,28 @@
       </div>
     </div>
 
-
     <script src="../assets/js/jQuery.js"></script>
     <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
-    <script src="../assets/js/swiper-bundle.min.js"></script>
-    <script src="../assets/js/jquery.counterup.min.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    
+    <script src="../assets/js/jquery.steps.js"></script>
+    <script>
+      var form = $("#example-form");
+
+      form.steps({
+        headerTag: "h6",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        titleTemplate: '<span class="step">#index#</span> #title#',
+
+        labels: {
+          finish: "إرسال",
+          next: "التالي",
+          previous: "السابق",
+          done: "55555555",
+        },
+        enableAllSteps: true,
+  
+
+      });
+    </script>
   </body>
 </html>

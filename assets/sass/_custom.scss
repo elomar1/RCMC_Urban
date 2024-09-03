@@ -54,7 +54,7 @@ body .swiper-pagination-bullet {
   font-size: 3rem;
 }
 .font24 {
-  color: #1D1D1D;
+  color: #1d1d1d;
   font-size: 2.4rem;
   line-height: 1.5;
 }
@@ -64,7 +64,7 @@ body .swiper-pagination-bullet {
   line-height: 1.5;
 }
 .p20 {
-  color: #1D1D1D;
+  color: #1d1d1d;
   font-size: 2rem;
   line-height: 1.8;
 }
@@ -2417,17 +2417,17 @@ footer {
     height: 100%;
     width: 100%;
     overflow: hidden;
-  
+
     img {
       height: 100%;
       width: 100%;
-      transition: .25s;
+      transition: 0.25s;
     }
   }
 }
 
 .includeBG {
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 77px 0 57px 0;
   ul.list-with-numbers li {
     align-items: start;
@@ -2448,13 +2448,12 @@ footer {
   }
 }
 
-
 .aimBg {
   position: relative;
   padding-bottom: 80px;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     left: 0;
     top: 0;
     width: 100%;
@@ -2467,7 +2466,7 @@ footer {
     }
   }
   .aimP {
-    background: #756B65;
+    background: #756b65;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -2485,7 +2484,7 @@ footer {
 
 .mapLinks {
   padding: 82px 0 150px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   .font30 {
     margin-bottom: 70px;
   }
@@ -2501,12 +2500,921 @@ footer {
     border-radius: 10px;
     height: 100%;
     box-shadow: 0 3px 30px rgba(0, 0, 0, 0.08);
-    transition: .25s;
+    transition: 0.25s;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     }
-    .txt{
+    .txt {
       margin-top: 22px;
     }
   }
+}
+
+.landing-card {
+  // width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 30px rgba($color: #000000, $alpha: 0.08);
+  position: relative;
+  margin: 0 12px;
+  transition: 0.5s;
+
+  .img-box {
+    flex: 0 0 auto;
+    img {
+    }
+  }
+  h3 {
+    font-size: 24px;
+    color: #1D1D1D;
+    font-family: "Suisse-B";
+  }
+
+  &:hover {
+    box-shadow: 0 3px 30px rgba($color: #000000, $alpha: 0.18);
+  }
+}
+.heading {
+  padding-top: 60px;
+  .font36 {
+    margin-bottom: 27px;
+  }
+
+}
+.servicesReq {
+  .heading {
+    margin-bottom: 70px;
+  }
+  padding: 0 0 100px;
+}
+
+/* steps */
+
+table{
+  text-align: center;
+  thead{
+    tr{
+      th,td{
+        background-color: $main-color !important;
+        font-size: 16px;
+        font-family: "Suisse-R";
+        color: #fff !important;
+        padding: 13px 15px !important;
+        text-align: center;
+      }
+    }
+  }
+  tbody{
+    tr{
+      background-color: #FFFFFF;
+      transition: 300ms;
+      &:nth-of-type(odd) *{
+        --bs-table-bg-type: #fff !important;
+        --bs-table-color-type:none !important;
+      }
+      &:nth-of-type(even) *{
+        --bs-table-bg-type: rgb(136 120 82 / 12%) !important;
+        --bs-table-color-type:none !important;
+      }
+      &:hover{
+        background-color:  rgba($color: $green-color, $alpha: 0.12);
+        --bs-table-bg-type : none !important
+      }
+    }
+    td{
+      background-color: transparent !important;
+      font-size: 14px;
+      color: $grey-color;
+      padding: 16px 10px !important;
+    }
+  }
+}
+
+/*
+    checkbox
+*/
+
+/* The container */
+.form-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+
+  label {
+    padding-#{$start-direction}: 37px;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+  }
+  
+  
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    #{$start-direction}: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #f7f7f7;
+    border: 1px solid #5E6065;
+    border-radius: 2px;
+    transition: 200ms;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  // .form-check:hover input ~ .checkmark {
+  //   background-color: #ccc;
+  // }
+  
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    background-color: $green-color;
+    border-color: $green-color;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+   input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+   .checkmark:after {
+    #{$start-direction}: 7px;
+    top: 2px;
+    width: 7px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+}
+
+
+
+
+/*
+    raaaaaaaaaadio
+*/
+
+
+/* The container */
+.form-radio-inline{
+  display: inline-block;
+  padding-#{$end-direction}: 24px;
+  margin-#{$end-direction}: 12%;
+}
+.form-radio {
+  // display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+
+  label {
+    font-family: "Suisse-L";
+    color: $grey-color3;
+    padding-#{$start-direction}: 37px;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+  }
+  
+  
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    #{$start-direction}: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #f7f7f7;
+    border: 1px solid #5E6065;
+    border-radius: 13px;
+    transition: 200ms;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  // .form-check:hover input ~ .checkmark {
+  //   background-color: #ccc;
+  // }
+  
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    background-color: #f7f7f7;
+    border-color: $green-color;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+   input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+   .checkmark:after {
+    #{$start-direction}: 4px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 13px;
+    background-color: $green-color;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+// add-task
+
+// .form-white-card {
+
+  .form-cont{
+    margin-bottom: 30px;
+  }
+  .form-label{
+    display: block;
+    font-size: 18px;
+    font-family: "Suisse-B";
+    color:#1D1D1D;
+    line-height: 1;
+    margin-bottom: 15px;
+    span{
+      font-size: 18px;
+      font-family: "Suisse-Li";
+      color: #9B9B9B;
+    }
+  }
+
+  .form-control{
+    background-color: #f7f7f7;
+    padding: 11px 16px;
+    line-height: 1.4;
+    height: 48px;
+    border: 1px solid #F7F7F7;
+    transition: 300ms;
+    font-size: 16px;
+    font-family: "Suisse-R";
+    color: #A5A3A8;
+    box-shadow: none;
+    text-align: #{$start-direction};
+    &::placeholder{
+      color: rgba($color: $dark-one, $alpha: 0.5);
+    }
+    &:focus{
+      border-color: $green-color;
+      background-color: #f7f7f7;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  textarea.form-control{
+    height: auto;
+  }
+  
+  .form-check-label{
+    color: $dark-one;
+    font-size: 18px;
+    font-family: "Suisse-Med";
+  }
+
+
+  input[type="date"] {
+    text-align: #{$start-direction};
+    flex-direction: row-reverse;
+  }
+
+
+
+.send-btn{
+  margin-top: 10px;
+  &.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Suisse-B";
+    width: 140px;
+    height: 48px;
+  }
+}
+
+// }
+
+
+
+
+
+.delete-btn{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba($color: $green-color, $alpha: 0.12);
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.save-btn{
+  margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      width: 140px;
+      height: 48px;
+      background-color: $main-color;
+      border: 1px solid $main-color;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 18px;
+      padding: 13px 20px 11px;
+      margin-bottom: 12px;
+      img{
+        margin-#{$end-direction}: 20px;
+      }
+    }
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 16px;
+  color: $main-color;
+  appearance: none;
+  background-image: url(../images/select-arr.svg);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  padding: 0 5px;
+}
+
+.status{
+  .status-img{
+    width: 34px;
+    height: 34px;
+    background-color: rgba($color: $green-color, $alpha: 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+@media(min-width:992px){
+  .offset-lg-1{
+    margin-#{$start-direction}: 8.33333333%;
+    margin-#{$end-direction}: 0;
+  }
+  .offset-lg-3{
+    margin-#{$start-direction}: 25%;
+    margin-#{$end-direction}: 0;
+  }
+
+  .panel-body.wizard-content .col-lg-6:nth-child(odd) {
+    padding-left: 25px;
+  }
+
+  .panel-body.wizard-content .col-lg-6:nth-child(even) {
+      padding-right: 25px;
+  }
+
+}
+
+
+
+#statusModal{
+  .modal-lg{
+    max-width: 935px;
+    .modal-body{
+      padding: 40px 45px;
+    }
+  }
+}
+
+.req-status{
+  .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    .img-box{
+      width: 30px;
+      height: 30px;
+      img{
+        max-width: 100%;
+      }
+    }
+    h3{
+      font-size: 24px;
+      font-family: "Suisse-B";
+      color: #756B65;
+      margin-bottom: 0;
+      
+    }
+  }
+  p{
+    font-size: 18px;
+    color: #5E6065;
+    margin-bottom: 0;
+  }
+}
+
+.allow-payment{
+  margin-top: 30px;
+  h3{
+    font-family: "Suisse-B";
+    font-size: 16px;
+    color: $grey-color3;
+    margin-bottom: 18px;
+  }
+}
+
+.grey-bg{
+  background-color: rgba($color: $bg-grey, $alpha: 0.1);
+}
+.notes{
+  padding: 20px 28px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  h3{
+    font-family: "Suisse-B";
+    font-size: 16px;
+    color: $black-color;
+    margin-bottom: 23px;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      font-family: "Suisse-L";
+      font-size: 14px;
+      color: $grey-color3;
+      margin-bottom: 10px;
+    }
+  }
+  p{
+    font-family: "Suisse-L";
+    font-size: 14px;
+    color: $grey-color3;
+    margin-bottom: 10px;
+  }
+
+}
+
+.close-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+
+  .close-a{
+    font-family: "Suisse-R";
+    font-size: 16px;
+    color: #fff;
+    background-color: $red-color;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    min-width: 90px;
+    height: 40px;
+  }
+}
+
+
+  
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+  
+  
+  /*
+Template Name: Monster Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: css
+*/
+
+
+.wizard-content .wizard {
+  width: 100%;
+  overflow: hidden;
+  .content {
+    margin-left: 0!important;
+
+  }
+> .steps {
+  position: relative;
+  display: block;
+  width: 100%;
+  .current-info {
+    position: absolute;
+    left: -99999px;
+  }
+   ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba($color: $bg-grey, $alpha: 0.3);
+    margin-bottom: 75px;
+    li {
+      width: auto;
+      position: relative;
+      text-align: center;
+      a{
+        position: relative;
+        // padding-top: 52px;
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+      }
+
+      &.current{
+        a {
+          color: $grey-color3;
+          font-family: "Suisse-B";
+          cursor: default;
+          font-size: 2rem;
+        }
+        .step {
+          background-color: $green-color;
+          color: #FFFFFF;
+        }
+      }
+      &.disabled{
+        a{
+          font-size: 20px;
+          font-family: "Suisse-L";
+          color: $grey-color3;
+          &:focus{
+            font-size: 20px;
+            font-family: "Suisse-L";
+            color: $grey-color3;
+          }
+          &:hover{
+            font-size: 20px;
+            font-family: "Suisse-L";
+            color: $grey-color3;
+          }
+        }
+      }
+      &.done{
+        a{
+          color: #999;
+          &:focus{
+            color: #999;
+          }
+          &:hover{
+            color: #999;
+          }
+
+
+          .step{
+            position: relative;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              right: 0;
+              top: 0;
+              border-radius: 50%;
+              background-image: url(../images/check-Icon.svg);
+              background-repeat: no-repeat;
+              background-size: auto;
+              background-position: center;
+              background-color: #63B246;
+            }
+          }
+        }
+        .step{
+          background-color: #63B246 ;
+          color: #fff
+        }
+      }
+      .error{
+        .step{
+          border-color: #f62d51;
+          color: #f62d51
+        }
+      }
+    }
+  }
+
+  .step {
+    background-color: #fff;
+    display: inline-block;
+    // position: absolute;
+    // top: 0;
+    // left: 50%;
+    // margin-left: -24px;
+    z-index: 10;
+    // text-align: center
+  }
+
+}
+
+
+.content{
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  .title {
+    position: absolute;
+    left: -99999px
+  }
+  // .body {
+  //   padding: 0 20px
+  // }
+  iframe {
+    border: 0;
+    width: 100%;
+    height: 100%
+  }
+
+}
+
+.actions {
+  position: relative;
+  display: block;
+
+  ul {
+    // float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a5a3a830;
+    padding-top: 40px;
+    &::after{
+      content: '';
+      display: table;
+      clear: both
+    }
+
+    li {
+      float: left;
+      & + li{
+        margin-right: auto;
+      }
+      a {
+        width: 140px;
+        height: 48px;
+        background: $main-color ;
+        color: #fff;
+        display: block;
+        padding: 7px 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: "Suisse-B";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:focus{
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, .05) inset
+        }
+        &:hover{
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, .05) inset
+        }
+        &:active{
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, .1) inset
+        }
+
+
+      }
+      a[href="#previous"]{
+        background-color: #fff;
+        color: $green-color;
+        border: 1px solid $green-color;
+        font-size: 16px;
+        font-family: "Suisse-B";
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:focus{
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, .02) inset
+        }
+        &:hover{
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, .02) inset
+        }
+        &:active{
+          box-shadow: 0 0 0 100px rgba(0, 0, 0, .04) inset
+        }
+      }
+
+
+      &.disabled{
+        display: none;
+      }
+    }
+
+  }
+
+}
+
+
+&.wizard-circle{
+  .steps{
+    .step{
+      width: 40px;
+      height: 40px;
+      line-height: 45px;
+      background-color: rgba($color: $main-color, $alpha: 0.3);
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      font-family: "Suisse-B";
+      color: $main-color;
+    }
+  }
+}
+}
+
+
+
+input[type="date"]{
+  position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  content: '';
+  background-image: url(../images/date-Icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+
+
+
+/**/
+
+input[type="file"]{
+  position: relative;
+}
+
+input[type="file"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  content: '';
+  background-image: url(../images/file-Icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.yesNoInput {
+  .flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 50px;
+    .radio-inline-container {
+      width: 45%;
+    }
+    .inputNumbHide {
+      width: 55%;
+    }
+  }
+
+}
+
+.statusBtn {
+  width: 140px;
+    height: 48px;
+    background: #756B65;
+    color: #fff;
+    display: block;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Suisse-B";
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
