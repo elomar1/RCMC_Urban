@@ -3,7 +3,38 @@
 $(document).ready(function () {
 
 
+  $('#contrastId').click(function(e){
+    e.preventDefault()
+    $('body').toggleClass('contrast')
+  });
 
+  $('#increaseFont').click(function(e){
+    e.preventDefault()
+    modifyFontSize('html','increase');
+  });
+  $('#decreaseFont').click(function(e){
+    e.preventDefault()
+    modifyFontSize('html','decrease')
+  });
+
+
+  function modifyFontSize(MyElement,flag){
+
+    var HtmlElement = $(MyElement);
+    var currentFontSize = parseInt (HtmlElement.css('font-size'));
+    
+    if (flag =='increase' & currentFontSize < 12 )
+        currentFontSize += 1;
+    else if (flag == 'decrease' & currentFontSize >= 9 )
+        currentFontSize -= 1;
+    else if (flag == 'reset')
+    currentFontSize = 10;
+
+    HtmlElement.css('font-size', currentFontSize);
+
+    // console.log(currentFontSize);
+
+  }
 
 
 
@@ -75,16 +106,17 @@ $('.contact-toggle').click(function(){
 
 
 // fancybox 
-
-Fancybox.bind("[data-fancybox]", {
-  // Transition effect when changing gallery items
-  Carousel: {
-    transition: "slide",
-  },
-  // Disable image zoom animation on opening and closing
-  Images: {
-    zoom: false,
-  },
-  // Custom CSS transition on opening
-  showClass: "f-fadeIn",
- });
+if( $('.fancybox').length )   {
+  Fancybox.bind("[data-fancybox]", {
+    // Transition effect when changing gallery items
+    Carousel: {
+      transition: "slide",
+    },
+    // Disable image zoom animation on opening and closing
+    Images: {
+      zoom: false,
+    },
+    // Custom CSS transition on opening
+    showClass: "f-fadeIn",
+   });
+}

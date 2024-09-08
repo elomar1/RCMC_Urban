@@ -68,6 +68,11 @@ body .swiper-pagination-bullet {
   font-size: 2rem;
   line-height: 1.8;
 }
+.p18 {
+  color: #1d1d1d;
+  font-size: 1.82rem;
+  line-height: 1.8;
+}
 
 .swiperHomeControl {
   height: 30px;
@@ -115,7 +120,7 @@ body .swiper-pagination-bullet {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   background: #fff;
 
   /* Center slide text vertically */
@@ -215,7 +220,7 @@ body .swiper-pagination-bullet {
         justify-content: flex-start;
         gap: 20px;
         span {
-          font-size: 18px;
+          font-size: 1.8rem;
           color: $white;
         }
         .arrow-box {
@@ -363,7 +368,7 @@ body .swiper-pagination-bullet {
         margin-bottom: 3px;
       }
       p {
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 18px;
         color: $white;
         font-family: "Suisse-B";
@@ -458,7 +463,7 @@ footer {
       gap: 130px;
       li {
         a {
-          font-size: 16px;
+          font-size: 1.6rem;
           font-family: "Suisse-B";
           color: $white;
 
@@ -495,7 +500,7 @@ footer {
       }
       .number {
         a {
-          font-size: 18px;
+          font-size: 1.8rem;
           font-family: "Suisse-B";
           color: $white;
         }
@@ -555,7 +560,7 @@ footer {
   }
 
   .copyRights {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: $grey;
     margin-bottom: 0;
   }
@@ -698,7 +703,7 @@ footer {
     }
 
     a {
-      font-size: 14px;
+      font-size: 1.4rem;
       color: $white;
     }
   }
@@ -713,7 +718,7 @@ footer {
       margin-bottom: 0;
     }
     a {
-      font-size: 18px;
+      font-size: 1.8rem;
       font-family: "Suisse-B";
       color: $white;
     }
@@ -756,7 +761,7 @@ footer {
         opacity: 1;
       }
       color: $titleColor !important;
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 25px;
       background: none;
       display: block;
@@ -785,7 +790,7 @@ footer {
       line-height: 35px;
       display: block;
       padding: 0px 10px !important;
-      font-size: 16px;
+      font-size: 1.6rem;
 
       &:hover {
         background: #887852;
@@ -796,6 +801,19 @@ footer {
 }
 
 /*SEARCH DROPDOWN*/
+.srch_box input[type=button], .srch_box input[type=submit] {
+  background: #675449;
+  color: #fff;
+  border: 0;
+  padding: 6px 0px;
+  width: 100%;
+  cursor: pointer;
+  float: left;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
 .srch_box {
   position: absolute;
   z-index: 999;
@@ -823,6 +841,7 @@ footer {
     color: #000;
     height: 39px;
     font-weight: 500;
+    font-size: 1.6rem;
   }
   input[type="button"],
   .srch_box input[type="submit"] {
@@ -864,7 +883,7 @@ footer {
         }
       }
       a {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-family: "Suisse-R";
         color: #a5a3a8;
         margin-#{$end-direction}: 5px;
@@ -884,7 +903,7 @@ footer {
         }
       }
       span {
-        font-size: 14px;
+        font-size: 1.4rem;
         color: #6c757d;
       }
     }
@@ -977,7 +996,7 @@ footer {
       margin-bottom: 48px;
     }
     p {
-      font-size: 18px;
+      font-size: 1.8rem;
       color: $titleColor;
       margin-bottom: 0;
     }
@@ -994,7 +1013,7 @@ footer {
     h3 {
       span {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         margin-bottom: 15px;
       }
     }
@@ -1266,7 +1285,7 @@ footer {
         color: $green-color;
       }
       .title {
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 1;
         color: #000;
       }
@@ -1398,7 +1417,7 @@ footer {
     h3 {
       span {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         margin-bottom: 15px;
       }
     }
@@ -1502,12 +1521,12 @@ footer {
         margin-bottom: 10px;
         span {
           display: block;
-          font-size: 20px;
+          font-size: 2rem;
           margin-bottom: 20px;
         }
       }
       p {
-        font-size: 18px;
+        font-size: 1.8rem;
         color: $white;
         margin-bottom: 0;
       }
@@ -1561,7 +1580,7 @@ footer {
       margin-bottom: 25px;
     }
     p {
-      font-size: 18px;
+      font-size: 1.8rem;
       color: $grey4;
       margin-bottom: 24px;
     }
@@ -1574,13 +1593,13 @@ footer {
       gap: 10px;
       .nav-item {
         .nav-link {
-          font-size: 16px;
+          font-size: 1.6rem;
           color: $green-color;
           background-color: transparent;
           border-radius: 25px;
           padding: 13px 25px 10px;
           &.active {
-            font-size: 18px;
+            font-size: 1.8rem;
             color: $white;
             background-color: $green-color;
             box-shadow: 0 3px 25px rgba($color: #000000, $alpha: 0.15);
@@ -1620,7 +1639,7 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        font-size: 18px;
+        font-size: 1.8rem;
         color: $titleColor;
         line-height: 18px;
         span {
@@ -1641,7 +1660,7 @@ footer {
           }
         }
         span {
-          font-size: 14px;
+          font-size: 1.4rem;
           color: $titleColor;
         }
       }
@@ -1705,7 +1724,7 @@ footer {
     margin-bottom: 50px;
   }
   .pageSecond-title {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "Suisse-B";
     color: $titleColor;
     margin-bottom: 35px;
@@ -1733,7 +1752,7 @@ footer {
         margin-bottom: 40px;
       }
       p {
-        font-size: 18px;
+        font-size: 1.8rem;
         color: $titleColor;
         margin-bottom: 0px;
       }
@@ -1752,7 +1771,7 @@ footer {
         }
       }
       span {
-        font-size: 14px;
+        font-size: 1.4rem;
         color: $green-color2;
       }
     }
@@ -1768,7 +1787,7 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        font-size: 18px;
+        font-size: 1.8rem;
         color: $titleColor;
         line-height: 18px;
         margin-bottom: 25px;
@@ -1790,7 +1809,7 @@ footer {
           }
         }
         span {
-          font-size: 14px;
+          font-size: 1.4rem;
           color: $titleColor;
         }
       }
@@ -1811,7 +1830,7 @@ footer {
           ul {
             margin-bottom: 0;
             li {
-              font-size: 18px;
+              font-size: 1.8rem;
               color: $titleColor;
               margin-bottom: 13px;
               &:last-child {
@@ -1840,7 +1859,7 @@ footer {
             width: 18px;
           }
           span {
-            font-size: 18px;
+            font-size: 1.8rem;
             color: $white;
             margin-bottom: 0px;
           }
@@ -1939,14 +1958,14 @@ footer {
         gap: 15px;
         padding-bottom: 35px;
         .title {
-          font-size: 20px;
+          font-size: 2rem;
         }
         .time {
-          font-size: 18px;
+          font-size: 1.8rem;
           color: #444444;
         }
         .details {
-          font-size: 16px;
+          font-size: 1.6rem;
           color: $grey4;
           margin-bottom: 0;
         }
@@ -1974,7 +1993,7 @@ footer {
         margin-bottom: 23px;
       }
       p {
-        font-size: 18px;
+        font-size: 1.8rem;
         color: #000;
       }
     }
@@ -1999,7 +2018,7 @@ footer {
         input {
           width: 87%;
           height: 65px;
-          font-size: 18px;
+          font-size: 1.8rem;
           padding: 24px;
           padding-#{$end-direction}: 25%;
           border-radius: 33px;
@@ -2015,7 +2034,7 @@ footer {
           position: absolute;
           #{$end-direction}: 0;
           top: 0;
-          font-size: 18px;
+          font-size: 1.8rem;
           font-family: "Suisse-B";
           display: flex;
           align-items: center;
@@ -2048,7 +2067,7 @@ ul.list-with-numbers {
   padding-#{$start-direction}: 30px;
   margin: 0;
   li {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: $titleColor;
     display: flex;
     flex-direction: row;
@@ -2061,7 +2080,7 @@ ul.list-with-numbers {
       height: 48px;
       background-color: #e8ddcd;
       color: $green-color;
-      font-size: 18px;
+      font-size: 1.8rem;
       font-family: "Suisse-M";
       counter-increment: li;
       content: counter(li);
@@ -2219,7 +2238,7 @@ footer {
     margin-bottom: 25px;
   }
   p {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: $grey4;
     margin-bottom: 68px;
     font-family: "Suisse-L";
@@ -2231,13 +2250,13 @@ footer {
       gap: 10px;
       .nav-item {
         .nav-link {
-          font-size: 16px;
+          font-size: 1.6rem;
           color: $green-color;
           background-color: transparent;
           border-radius: 25px;
           padding: 13px 25px 10px;
           &.active {
-            font-size: 18px;
+            font-size: 1.8rem;
             color: $white;
             background-color: $green-color;
             box-shadow: 0 3px 25px rgba($color: #000000, $alpha: 0.15);
@@ -2287,7 +2306,7 @@ footer {
             }
           }
           span {
-            font-size: 14px;
+            font-size: 1.4rem;
             color: $green-color2;
             font-family: "Suisse-B";
             color: $grey4;
@@ -2296,19 +2315,19 @@ footer {
         h4 {
           margin-top: 16px;
           margin-bottom: 22px;
-          font-size: 20px;
+          font-size: 2rem;
           font-family: "Suisse-B";
           color: $titleColor;
           text-align: #{$start-direction};
         }
         p.date {
-          font-size: 18px;
+          font-size: 1.8rem;
           color: #444444;
           margin-bottom: 26px;
           text-align: #{$start-direction};
         }
         p.details {
-          font-size: 16px;
+          font-size: 1.6rem;
           color: $grey4;
           margin-bottom: 0;
           text-align: #{$start-direction};
@@ -2332,7 +2351,7 @@ footer {
       gap: 20px;
       span {
         color: $green-color;
-        font-size: 18px;
+        font-size: 1.8rem;
       }
       .iconbox {
         width: 48px;
@@ -2524,16 +2543,19 @@ footer {
   position: relative;
   margin: 0 12px;
   transition: 0.5s;
-
+  text-align: center;
+  padding: 20px 30px 0;
   .img-box {
     flex: 0 0 auto;
     img {
     }
   }
   h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #1D1D1D;
     font-family: "Suisse-B";
+    text-align: center;
+    line-height: 1.8;
   }
 
   &:hover {
@@ -2562,7 +2584,7 @@ table{
     tr{
       th,td{
         background-color: $main-color !important;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-family: "Suisse-R";
         color: #fff !important;
         padding: 13px 15px !important;
@@ -2589,7 +2611,7 @@ table{
     }
     td{
       background-color: transparent !important;
-      font-size: 14px;
+      font-size: 1.4rem;
       color: $grey-color;
       padding: 16px 10px !important;
     }
@@ -2788,13 +2810,13 @@ table{
   }
   .form-label{
     display: block;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: "Suisse-B";
     color:#1D1D1D;
     line-height: 1;
     margin-bottom: 15px;
     span{
-      font-size: 18px;
+      font-size: 1.8rem;
       font-family: "Suisse-Li";
       color: #9B9B9B;
     }
@@ -2807,7 +2829,7 @@ table{
     height: 48px;
     border: 1px solid #F7F7F7;
     transition: 300ms;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: "Suisse-R";
     color: #A5A3A8;
     box-shadow: none;
@@ -2828,7 +2850,7 @@ table{
   
   .form-check-label{
     color: $dark-one;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: "Suisse-Med";
   }
 
@@ -2855,7 +2877,7 @@ table{
     color: #fff;
     background-color: $main-color;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: "Suisse-B";
     width: 140px;
     height: 48px;
@@ -2894,7 +2916,7 @@ table{
       border: 1px solid $main-color;
       border-radius: 8px;
       color: #fff;
-      font-size: 18px;
+      font-size: 1.8rem;
       padding: 13px 20px 11px;
       margin-bottom: 12px;
       img{
@@ -2907,7 +2929,7 @@ select {
   width: 100%;
   height: 100%;
   border: 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: $main-color;
   appearance: none;
   background-image: url(../images/select-arr.svg);
@@ -2977,7 +2999,7 @@ select {
       }
     }
     h3{
-      font-size: 24px;
+      font-size: 2.4rem;
       font-family: "Suisse-B";
       color: #756B65;
       margin-bottom: 0;
@@ -2985,7 +3007,7 @@ select {
     }
   }
   p{
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #5E6065;
     margin-bottom: 0;
   }
@@ -2995,7 +3017,7 @@ select {
   margin-top: 30px;
   h3{
     font-family: "Suisse-B";
-    font-size: 16px;
+    font-size: 1.6rem;
     color: $grey-color3;
     margin-bottom: 18px;
   }
@@ -3010,7 +3032,7 @@ select {
   margin-bottom: 30px;
   h3{
     font-family: "Suisse-B";
-    font-size: 16px;
+    font-size: 1.6rem;
     color: $black-color;
     margin-bottom: 23px;
   }
@@ -3019,14 +3041,14 @@ select {
     padding: 0;
     li{
       font-family: "Suisse-L";
-      font-size: 14px;
+      font-size: 1.4rem;
       color: $grey-color3;
       margin-bottom: 10px;
     }
   }
   p{
     font-family: "Suisse-L";
-    font-size: 14px;
+    font-size: 1.4rem;
     color: $grey-color3;
     margin-bottom: 10px;
   }
@@ -3041,7 +3063,7 @@ select {
 
   .close-a{
     font-family: "Suisse-R";
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
     background-color: $red-color;
     border-radius: 8px;
@@ -3127,7 +3149,7 @@ File: css
         justify-content: flex-start;
         gap: 15px;
       }
-
+      &.done,
       &.current{
         a {
           color: $grey-color3;
@@ -3140,18 +3162,23 @@ File: css
           color: #FFFFFF;
         }
       }
+      &.done {
+        a {
+          font-family: "Suisse-L";
+        }
+      }
       &.disabled{
         a{
-          font-size: 20px;
+          font-size: 2rem;
           font-family: "Suisse-L";
           color: $grey-color3;
           &:focus{
-            font-size: 20px;
+            font-size: 2rem;
             font-family: "Suisse-L";
             color: $grey-color3;
           }
           &:hover{
-            font-size: 20px;
+            font-size: 2rem;
             font-family: "Suisse-L";
             color: $grey-color3;
           }
@@ -3269,7 +3296,7 @@ File: css
         display: block;
         padding: 7px 12px;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-family: "Suisse-B";
         display: flex;
         align-items: center;
@@ -3290,7 +3317,7 @@ File: css
         background-color: #fff;
         color: $green-color;
         border: 1px solid $green-color;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-family: "Suisse-B";
         border-radius: 8px;
         display: flex;
@@ -3327,7 +3354,7 @@ File: css
       background-color: rgba($color: $main-color, $alpha: 0.3);
       border: none;
       border-radius: 50%;
-      font-size: 20px;
+      font-size: 2rem;
       font-family: "Suisse-B";
       color: $main-color;
     }
@@ -3412,9 +3439,71 @@ input[type="file"]:before {
     display: block;
     padding: 7px 12px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: "Suisse-B";
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.accordion {
+	.accordion-button {
+		background: #F8F8F8;
+		border: unset !important;
+		font-size: 2rem;
+		font-family: "Suisse-B";
+		padding: 24px 30px  !important;
+		color: #727272;
+		&:not(.collapsed)::after {
+			transform: rotate(45deg);
+			background-image: url(../images/services/accPlus.svg);
+		}
+		&::after {
+			background-image: url(../images/services/accPlus.svg);
+			margin-right: auto;
+			margin-left: unset;
+			width: 26px;
+			height: 23px;
+			background-size: 26px;
+		}
+		&:focus {
+			box-shadow: unset;
+		}
+		&:not(.collapsed) {
+			color: #1d1d1d;
+		}
+	}
+	.accordion-item {
+		margin-bottom: 30px;
+		border: unset !important;
+		&:first-of-type {
+			& > .accordion-header {
+				.accordion-button {
+					border-top-left-radius: unset;
+					border-top-right-radius: unset;
+				}
+			}
+		}
+	}
+}
+
+.blueColoe {
+  color: #003FDB !important;
+}
+.greenColoe {
+  color: #009D0A !important;
+}
+.redColoe {
+  color: #DB0000 !important;
+} 
+
+.contrast {
+  filter: grayscale(100%) brightness(95%) contrast(120%);
+  // .contact-toggle {
+  //   filter: grayscale(100%) brightness(95%) contrast(120%);
+ 
+  //   }
+  //   > :not(.contact-toggle) {
+  //     filter: grayscale(100%) brightness(95%) contrast(120%);
+  // }
 }

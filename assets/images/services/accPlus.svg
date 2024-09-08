@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="23" viewBox="0 0 26 23">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_13423" data-name="Rectangle 13423" width="26" height="23" transform="translate(30 31)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.56"/>
+    </clipPath>
+  </defs>
+  <g id="accPlus" transform="translate(-30 -31)" clip-path="url(#clip-path)">
+    <text id="_" data-name="+" transform="translate(56 54)" fill="#727272" font-size="50" font-family="Almarai-Regular, Almarai"><tspan x="-25.85" y="0">+</tspan></text>
+  </g>
+</svg>
