@@ -3630,6 +3630,64 @@ input[type="file"]:before {
 }
 
 @media (max-width: 1400px) {
+  .landing-card h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .homeHeader .homeSwiper .boxHomeSlide h2 {
+    font-size: 3rem;
+  }
+  .mapBx .font24 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .Tourist-Experiences .tab-content .content-card .img-box {
+    height: 440px;
+  }
+  .p20 {
+    color: #1d1d1d;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  footer .footer-links ul li a,
+  .reverse-nav li a {
+    font-size: 1.4rem;
+  }
+  .font36 {
+    font-size: 3rem;
+  }
+  .font30 {
+    font-size: 2.8rem;
+  }
+  .font22 {
+    font-size: 1.9rem;
+  }
+  .form-label,
+  ul.list-with-numbers li {
+    font-size: 1.6rem;
+  }
+  .tabsCustom .nav-item .nav-link .font22 {
+    font-size: 1.5rem;
+  }
+  .tabsCustom .nav-item .nav-link .font22 br {
+    display: none;
+  }
+  .tabsCustom .nav-item .nav-link img {
+    max-width: 40px;
+    margin-right: 10px;
+  }
+  .mainBtnBorder,
+  .mainBtn {
+    height: 45px;
+    min-width: 130px;
+    font-size: 1.4rem;
+  }
+  .whatIsStudio {
+    padding: 100px 0;
+  }
+  .homeHeader .homeSwiper .container {
+    padding-bottom: 10px;
+  }
   .homeHeader .homeSwiper .boxHomeSlide {
     margin-bottom: 50px;
   }
@@ -3639,14 +3697,11 @@ input[type="file"]:before {
 }
 
 @media (max-width: 1199.98px) {
-  .homeHeader .homeSwiper {
-    margin-top: 150px;
-  }
   .homeHeader .homeSwiper .swiper-slide .boxHomeSlide {
     margin-left: 0;
   }
   .homeHeader .homeSwiper {
-    margin-top: 125px;
+    margin-top: 0;
   }
   .homeHeader .homeSwiper .boxHomeSlide {
     margin-right: 50px;
@@ -3654,22 +3709,122 @@ input[type="file"]:before {
 }
 
 @media (max-width: 991px) {
+  .p20 {
+    color: #1d1d1d;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  footer .footer-links ul li a,
+  .reverse-nav li a {
+    font-size: 1.2rem;
+  }
+  .font36 {
+    font-size: 2.6rem;
+  }
+  .font30 {
+    font-size: 2.4rem;
+  }
+  .font22 {
+    font-size: 1.6rem;
+  }
+  ul.list-with-numbers li {
+    font-size: 1.4rem;
+  }
+  .tabsCustom .nav-item .nav-link .font22 {
+    font-size: 1.2rem;
+  }
+  .tabsCustom .nav-item {
+    width: calc(33.333% - 24px);
+    margin-bottom: 25px;
+  }
+  .tabsCustom .nav {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+  .homeHeader .homeSwiper .boxHomeSlide {
+    margin-right: 0;
+  }
+  .whatIsStudio .col-md-6 {
+    width: 100%;
+  }
+  .whatIsStudio .txt {
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
   .homeHeader,
   .footer {
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
+  /*
   .homeHeader,
   .homeHeader .bg-video-wrap,
   .homeHeader .overlay,
   .homeHeader .bg-video-wrap {
     max-height: 650px;
   }
-  /*
-        neeeeeeeeeeeew
 */
+  .Tourist-Experiences .main-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .Tourist-Experiences p {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+  }
+  .mapLinks .col-md-3,
+  .aimBg .col-md-3 {
+    width: 50%;
+  }
+  .Tourist-Experiences .swiper-button-prev,
+  .Tourist-Experiences .swiper-rtl .swiper-button-next {
+    width: 45px;
+    height: 45px;
+    top: 41%;
+  }
+  .Tourist-Experiences .tab-content .content-card .img-box {
+    height: 350px;
+  }
   .homeHeader video {
     min-height: 100%;
   }
+  .heading {
+    padding-top: 40px;
+  }
+  .servicesReq .heading {
+    margin-bottom: 35px;
+  }
+  .servicesReq {
+    padding: 0 0 40px;
+  }
+  .landing-card {
+    height: auto;
+    margin: 0 12px 20px 12px;
+    padding: 20px 30px 0;
+    gap: 15px;
+  }
+  .landing-card .img-box img {
+    width: 35px;
+    margin-top: 15px;
+  }
+  .landing-card h3 {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+  .wizard-content .wizard > .steps ul {
+    gap: 20px;
+  }
+  .wizard-content .wizard.wizard-circle .steps .step {
+    font-size: 1.6rem;
+    transform: scale(0.8);
+  }
+  .wizard-content .wizard > .steps ul li.done a,
+  .wizard-content .wizard > .steps ul li.current a {
+    font-size: 1.6rem;
+  }
+  .wizard-content .wizard > .steps ul li.disabled a {
+    font-size: 1.6rem;
+  }
+  /* end 991 */
 }
 
 @media (max-width: 767.98px) {
@@ -3683,13 +3838,255 @@ input[type="file"]:before {
   .homeHeader .homeSwiper .boxHomeSlide p {
     font-size: 18px;
   }
+  .homeHeader .homeSwiper .container {
+    padding: 15px;
+  }
+  .homeHeader .homeSwiper .boxHomeSlide p {
+    font-size: 14px;
+  }
+  .mainBtnBorder,
+  .mainBtn {
+    height: 40px;
+    min-width: 100px;
+    font-size: 1.2rem;
+  }
+  .newBannerHM .mainBtnBorder {
+    min-width: 120px;
+    margin: 0 10px;
+  }
+  .newBannerHM .homeSwiper .swiper-pagination {
+    bottom: 10px;
+    padding-left: 20px;
+  }
+  .reverse-nav {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .whatIsStudio {
+    padding: 40px 0;
+  }
+  .whatIsStudio .txt .p20 {
+    margin: 0;
+    line-height: 1.8;
+  }
+  .bgWhyStm {
+    background-size: 60px;
+    background-position: 0px 0;
+    padding: 15px 15px;
+    padding-left: 30px;
+    margin-bottom: 35px;
+  }
+  .bgWhyStm .font24 {
+    font-size: 2.2rem;
+  }
+  ul.list-with-numbers li::before {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+  .cont-box .font30 {
+    margin-bottom: 25px;
+  }
+  ul.list-with-numbers {
+    padding-right: 0;
+  }
+  .tabsCustom .nav {
+    padding: 0;
+  }
+  .tabsCustom .nav-item .nav-link {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center !important;
+    min-height: auto;
+  }
+  .tabsCustom .nav-item .nav-link img {
+    max-width: 25px;
+    margin-right: 0;
+  }
+  .tabsCustom .nav-item .nav-link .font22 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+  .tabsCustom .nav {
+    margin-bottom: 10px;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  footer .logo2 img {
+    width: 90%;
+  }
+  footer .footer-links ul {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footer-social {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+  }
+  footer .footer-social .social-links ul li a {
+    width: 25px;
+    height: 25px;
+  }
+  footer .footer-social .social-links ul li a img {
+    max-width: 15px;
+    max-height: 15px;
+  }
+  footer .accessibility ul {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  footer .accessibility ul img {
+    width: 22px;
+  }
+  footer .accessibility ul li:nth-of-type(2) img {
+    width: 15px;
+  }
+  footer .footer-logos {
+    margin-bottom: 20px;
+  }
+  footer .copyRights {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  footer .last-links ul li a {
+    font-size: 10px;
+  }
+  footer .footer-social .social-links ul,
+  footer .footer-social .social-links,
+  footer .footer-social .phone,
+  footer .footer-social .phone ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .accordion .accordion-item {
+    margin-bottom: 15px;
+  }
+  .accordion .accordion-button {
+    font-size: 1.6rem;
+    padding: 20px 20px !important;
+    text-align: right;
+  }
+  .accordion .accordion-button::after {
+    background-size: 17px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .homeHeader .homeSwiper .swiper-slide .boxHomeSlide {
     margin-right: 0px;
   }
-  .homeHeader .homeSwiper .swiper-slide * {
-    padding: 0 15px;
+  .nav_social_list::before {
+    border-top: 44px solid #887852;
+    border-left: 26px solid transparent;
+    left: -26px;
+  }
+  .tabsCustom .nav-item {
+    width: calc(50% - 24px);
+    margin-bottom: 20px;
+  }
+  .nav_search_bar .lang a,
+  .nav_search_bar .nav_contact a {
+    font-size: 1.2rem;
+  }
+  .font36 {
+    font-size: 2.4rem;
+  }
+  .homeHeader {
+    max-height: 430px !important;
+  }
+  .contact-toggle {
+    transform: scale(0.8);
+  }
+  .whyANStudio .tabsCustom {
+    padding: 30px 0 20px;
+  }
+  .wizard-content .wizard > .steps ul {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 45px;
+  }
+  .form-control::placeholder {
+    font-size: 14px;
+  }
+  .landing-card h3 {
+    font-size: 1.4rem;
+  }
+  .wizard-content .wizard > .steps ul li {
+    width: 100%;
+  }
+  .form-label,
+  ul.list-with-numbers li {
+    font-size: 1.4rem;
+  }
+  .req-status .title h3 {
+    font-size: 2rem;
+  }
+  .req-status p {
+    font-size: 1.4rem;
+  }
+  .wizard-content .wizard .actions ul li a {
+    width: 110px;
+    height: 40px;
+    padding: 7px 12px;
+    font-size: 1.4rem;
+  }
+  .notes ul li {
+    font-size: 1.2rem;
+  }
+  .aimBg {
+    padding-bottom: 25px;
+  }
+  .aimBg .col-md-12 .font24 {
+    padding: 40px 0 30px;
+  }
+  .mapLinks .font30 {
+    margin-bottom: 35px;
+  }
+  .mapLinks .col-md-3 {
+    margin-bottom: 25px;
+  }
+  .Tourist-Experiences .tab-content .swiper {
+    padding-bottom: 65px;
+  }
+  .mapLinks .mapBx {
+    padding: 40px 15px;
+    border-radius: 10px;
+  }
+  .mapLinks {
+    padding: 50px 0 50px;
+    background: #fcfcfc;
+  }
+  .mapBx .font24 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  .Tourist-Experiences {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .includeBG .flex span,
+  .includeBG .flex strong {
+    font-size: 1.6rem;
+  }
+  .includeBG {
+    padding: 50px 0 30px 0;
+  }
+  .mapLinks .col-md-3,
+  .aimBg .col-md-3 {
+    width: 100%;
+  }
+  .navigation-conatiner .container-fluid .right-sidebar {
+    width: 100%;
   }
 }
